@@ -1,0 +1,25 @@
+{
+  "status": "SUCCESS",
+  "results": [
+    {
+      "description": "Check for negative amounts",
+      "query": "SELECT * FROM transactions WHERE amount < 0",
+      "rows_found": 5,
+      "passed": false,
+      "error": null
+    },
+    {
+      "description": "Check for orphaned transactions",
+      "query": "SELECT * FROM transactions WHERE user_id IS NULL",
+      "rows_found": 0,
+      "passed": true,
+      "error": null
+    }
+  ],
+  "issue_url": "https://github.com/yourusername/your-repo-name/issues/1",
+  "report": "AI Dynamic Validation discovered anomalies in the restored backup. Negative transaction amounts were found and require investigation.",
+  "raw_lines": [
+    "Test: Check for negative amounts\nQuery: SELECT * FROM transactions WHERE amount < 0\nPassed: False\nRows Found: 5\nError: None\n",
+    "Test: Check for orphaned transactions\nQuery: SELECT * FROM transactions WHERE user_id IS NULL\nPassed: True\nRows Found: 0\nError: None\n"
+  ]
+}

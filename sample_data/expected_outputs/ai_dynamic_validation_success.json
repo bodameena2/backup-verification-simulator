@@ -1,0 +1,25 @@
+{
+  "status": "SUCCESS",
+  "results": [
+    {
+      "description": "Check for negative amounts",
+      "query": "SELECT * FROM transactions WHERE amount < 0",
+      "rows_found": 0,
+      "passed": true,
+      "error": null
+    },
+    {
+      "description": "Check for orphaned transactions",
+      "query": "SELECT * FROM transactions WHERE user_id IS NULL",
+      "rows_found": 0,
+      "passed": true,
+      "error": null
+    }
+  ],
+  "issue_url": null,
+  "report": "AI Dynamic validation completed successfully. No anomalies were detected in the sandbox database.",
+  "raw_lines": [
+    "Test: Check for negative amounts\nQuery: SELECT * FROM transactions WHERE amount < 0\nPassed: True\nRows Found: 0\nError: None\n",
+    "Test: Check for orphaned transactions\nQuery: SELECT * FROM transactions WHERE user_id IS NULL\nPassed: True\nRows Found: 0\nError: None\n"
+  ]
+}

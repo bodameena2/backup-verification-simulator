@@ -1,0 +1,9 @@
+{
+  "status": "FAIL",
+  "details": [],
+  "errors": [
+    "Database error: no such table: users"
+  ],
+  "report": "Gemini API key not configured. Mock report: Validation completed.",
+  "issue_url": null
+}

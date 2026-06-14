@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "details": [
+    "Users table count: 100",
+    "Transactions table count: 500",
+    "Total transactions sum: 12345.67"
+  ],
+  "errors": [],
+  "report": "Gemini API key not configured. Mock report: Validation completed.",
+  "issue_url": null
+}

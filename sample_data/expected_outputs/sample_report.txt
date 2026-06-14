@@ -1,0 +1,8 @@
+Backup: backup_test.db
+Status: PASS
+Users table count: 100
+Transactions table count: 500
+Total transactions sum: 12345.67
+
+Report:
+All data checks passed. The restored database backup appears healthy and restorable. No integrity issues were found during verification.
